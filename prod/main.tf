@@ -1,11 +1,4 @@
-resource "random_string" "suffix" {
-  length  = 5
-  special = false
-  upper   = false
-}
-
 locals {
-  resource_suffix = random_string.suffix.result
   common_tags = {
     environment = var.environment
     owner       = var.owner
@@ -13,7 +6,7 @@ locals {
   }
 
 
-  resource_group_name = "rg-${var.project_name}-${var.environment}-${local.resource_suffix}"
+  resource_group_name = "exam-az900"
 }
 
 module "resource_group" {
