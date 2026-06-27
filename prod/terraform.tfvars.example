@@ -12,4 +12,4 @@ environment = "prod"
 location = "westeurope"
 
 # Owner or team
-owner = "Tomasz"
+owner = "devteam"
